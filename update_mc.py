@@ -9,7 +9,7 @@ Created on Tue Aug  2 19:31:01 2022
 import requests
 
 versions = requests.get('https://launchermeta.mojang.com/mc/game/version_manifest.json')
-current= versions.json()['versions'][0]['url']
+current = versions.json()['versions'][0]['url']
 
 target = requests.get(current)
 target_dl = target.json()['downloads']['server']['url']
