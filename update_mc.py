@@ -18,5 +18,5 @@ URL = target_dl
 
 r = requests.get(URL, allow_redirects=True)
 
-with open('minecraft_server.jar', 'wb') as file:
+with open('/usr/local/bin/minecraft_server.jar', 'wb') as file:
     file.write(r.content)
