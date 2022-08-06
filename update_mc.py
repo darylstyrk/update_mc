@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug  2 19:31:01 2022
-
-@author: darylstyrk
-"""
 
 import requests
 
