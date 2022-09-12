@@ -26,3 +26,4 @@ if remote_sha1 != local_sha1:
     remote_jar = httpx.get(target_dl)
     with open("/usr/local/bin/minecraft_server.jar", "wb") as file:
         file.write(remote_jar.content)
+        os.chmod("/usr/local/bin/minecraft_server.jar" , 0o755)
