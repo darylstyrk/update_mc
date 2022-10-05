@@ -6,7 +6,7 @@ import os
 from random import randint
 from time import sleep
 
-sleep(randint(60,3600))
+sleep(randint(60, 3600))
 
 versions = httpx.get("https://launchermeta.mojang.com/mc/game/version_manifest.json")
 current = versions.json()["versions"][0]["url"]
