@@ -32,7 +32,7 @@ with open(local_file, "rb") as f:
         sha1.update(data)
 local_sha1 = sha1.digest()
 
-# Compare the remote hash to the local hash. If they're not the same we assume the remote has is
+# Compare the remote hash to the local hash. If they're not the same we assume the remote hash is
 # newer and we replace the local version with the remote.
 if remote_sha1 != local_sha1:
     remote_jar = httpx.get(target_dl)
